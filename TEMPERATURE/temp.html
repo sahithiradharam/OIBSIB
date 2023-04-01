@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="temp.css" />
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="inner-container">
+            <p class="main-heading">Temperature Converter</p>
+            <div class="degreess">
+                <div>
+                    <label for="degrees">Degrees</label>
+                    <br />
+                    <input type="text" id="degrees" />
+                </div>
+                <br />
+                <div>
+                    <label for="type">Type</label>
+
+                    <br />
+                    <select id="select-type">
+                        <option value="Fahrenheit">
+                            Fahrenheit
+                        </option>
+                        <option value="Celsius">
+                            Celsius
+                        </option>
+                        <option id="Kelvin">
+                            Kelvin
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <p class="result">Results</p>
+            <p id="results"></p>
+            <div class="button-container">
+
+                <button id="convert-button">Convert</button>
+            </div>
+
+            <p id="error"></p>
+
+            <p   class="name">Designed and developed by RADHARAM SAHITHI</p>
+        </div>
+
+    </div>
+    <script src="temp.js"></script>
+</body>
+
+</html>
