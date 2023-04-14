@@ -1,0 +1,515 @@
+{
+    margin: 0px;
+}
+
+.main-container {
+    background-color: black;
+
+
+}
+
+.navbarfix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+span {
+    color: yellow;
+    font-family: "bree serif";
+    font-weight: bold;
+
+}
+
+.first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .first-page {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hire-me {
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    font-family: "bree serif";
+    border-width: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+
+}
+
+.my-works {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    font-family: "bree serif";
+    border-width: 3px;
+    border-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.hello {
+    color: white;
+    font-family: "bree serif";
+    font-weight: bold;
+
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    border-width: 2px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        justify-content: center;
+        align-items: center;
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        width: 100%;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 120px;
+        margin-top: 0px;
+    }
+}
+
+.my-image {
+    border-radius: 10px;
+    height: 60vh;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 992px) {
+    .my-image {
+        margin-right: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .my-image {
+        width: 60%;
+        height: 80vh;
+    }
+}
+
+.about-image {
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-image {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-image-container {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.aboutpage-container {
+
+    padding-top: 150px;
+    padding-bottom: 190px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "serif bree";
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+    .aboutpage-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about-details {
+    margin-left: 120px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+* {
+
+    font-family: "Abril Fatface";
+}
+
+.resume-container {
+
+    padding-top: 20px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+
+
+}
+
+
+.total-container {
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+.name-container {
+    font-weight: bold;
+    font-family: "Roboto";
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.resume {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .name-container {
+        font-weight: bold;
+        font-family: "Roboto";
+        text-align: center;
+        padding-top: 30px;
+        font-size: 10px;
+
+    }
+
+}
+
+a {
+    color: white;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+
+}
+
+hr {
+    margin-top: 30px;
+    height: 5px;
+    background-color: white;
+    border-width: 0px;
+
+}
+
+.summary-container {
+    padding: 40px;
+    font-family: "Roboto";
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: transparent;
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .summary-container {
+        padding: 40px;
+        font-family: "Roboto";
+        border-radius: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 10px;
+
+    }
+
+}
+
+.Experience-container {
+    padding: 40px;
+    font-family: "Roboto";
+    border-radius: 20px;
+
+    font-weight: bold;
+    background-color: transparent;
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .Experience-container {
+        padding: 20px;
+        font-family: "Roboto";
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 10px;
+
+    }
+
+}
+
+.Education-container {
+    padding: 20px;
+    font-family: "Roboto";
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .Education-container {
+        padding: 20px;
+        font-family: "Roboto";
+
+        font-size: 10px;
+        border-radius: 20px;
+
+        font-weight: bold;
+        background-color: transparent;
+
+
+    }
+
+}
+
+.skills-container {
+    padding: 20px;
+    font-family: "Roboto";
+
+    border-radius: 20px;
+
+    font-weight: bold;
+    background-color: transparent;
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container {
+        padding: 20px;
+        font-family: "Roboto";
+        font-size: 10px;
+        border-radius: 20px;
+
+        font-weight: bold;
+        background-color: transparent;
+
+
+    }
+
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: "Abril Fatface";
+}
+
+.services-container {
+    padding-top: 80px;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.services-card1 {
+    border-style: solid;
+    border-color: white;
+    height: 40vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services-card1:hover {
+    background-color: #7be3d9;
+    color: black;
+}
+
+.web-icon {
+    height: 20vh;
+
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    padding-top: 10px;
+
+    border-radius: 0px;
+
+}
+
+.skills-container1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+meter {
+    height: 40px;
+    width: 40%;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    color: white;
+
+}
+
+.project-icons {
+    width: 180px;
+    height: 15vh;
+}
+
+@media screen and (min-width: 992px) {
+    .project-icons {
+        height: 20vh;
+        width: 200px;
+    }
+}
+
+.youtube-application:hover {
+    background-color: #e39fd5;
+    color: black;
+}
+
+.youtube-application {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .youtube-application,
+    h1 {
+        font-size: 15px;
+    }
+}
+
+.contact-container {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.footer {
+    height: 25px;
+    background-color: #52545c;
+    font-family: "serif bree";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
