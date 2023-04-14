@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/de3cf8ca57.js" crossorigin="anonymous"></script>
+<style>
+
+* {
+    margin: 0px;
+}
+
+@media screen and (min-width:768px) {
+    #carouselExampleSlidesOnly {
+        padding: 120px;
+        padding-top: 80px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #carouselExampleSlidesOnly {
+        padding: 20px;
+        padding-top: 80px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #carouselExampleSlidesOnly {
+        padding: 40px;
+        padding-top: 80px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    #carouselExampleSlidesOnly {
+        padding: 120px;
+        padding-top: 80px;
+    }
+
+    img {
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+a {
+    font-family: "bree serif";
+}
+
+.luxury-main {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "bree serif";
+}
+
+.contact {
+    background-color: #733d3d;
+    color: #ffffff;
+
+}
+
+.luxury-heading {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "bree serif";
+}
+
+@media screen and (min-width: 576px) {
+    .luxury-heading {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-family: "bree serif";
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .luxury-heading {
+        font-size: 30px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-family: "bree serif";
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .luxury-heading {
+        font-size: 30px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-family: "bree serif";
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .luxury-heading {
+        font-size: 30px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-family: "bree serif";
+
+    }
+
+}
+
+.detais-container1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "roboto";
+    font-weight: bold;
+
+}
+
+
+
+.detais-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+.detais-container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rings-container {
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .rings-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.rings {
+    height: 200px;
+    margin: 5px;
+    min-width: 100%;
+}
+
+.card-1 {
+    margin: 10px;
+}
+
+.ring-name {
+    font-family: "roboto";
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 12px;
+
+}
+
+@media screen and (max-width: 576px) {
+    .ring-name {
+        font-size: 10px;
+        font-family: "roboto";
+        padding-left: 10px;
+
+    }
+}
+
+.tablist-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navs-button {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Category-heading {
+    font-family: "serif bree";
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.Services-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+.Services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services1 {
+    display: flex;
+    background-color: #2e1c28;
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .Services1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e1c28;
+        width: 100%;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .Services1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e1c28;
+        width: 100%;
+        color: white;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .Services {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.service-image {
+    height: 420px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.design-image {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .design-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .design-image {
+        min-width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-image {
+        height: 320px;
+        width: 320px;
+    }
+}
+
+.details-container {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .details-container {
+        font-size: 10px;
+    }
+}
+
+.custom-heading {
+    font-family: "serif bree";
+    font-weight: bold;
+    padding-bottom: 40px;
+    padding-left: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .custom-heading {
+        font-size: 20px;
+    }
+}
+
+.custom-paragraph {
+    font-family: "serif bree";
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.read-button {
+    background-color: #59212e;
+    border-width: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 20px;
+    font-family: "serif bree";
+    font-weight: bold;
+}
+
+.read-button1 {
+    background-color: #faf450;
+    border-width: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 20px;
+    font-family: "serif bree";
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.our-serviesheading {
+    font-family: "serif bree";
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.image-container {
+    width: 100%;
+    padding: 40px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+    }
+}
+
+.on-insta-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .on-insta-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .on-insta-container {
+        display: flex;
+        padding: 20px;
+    }
+}
+
+.on-insta-container {
+    display: flex;
+
+}
+
+.insta-image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bride-image {
+    height: 80vh;
+    width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .bride-image {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.middle-images {
+    height: 40vh;
+}
+
+
+.custom-heading1 {
+    padding-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "serif bree";
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width:576px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about-container1 {
+    display: flex;
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-container1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.about-image {
+    height: 90vh;
+
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .about-image {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-image {
+        padding: 10px;
+        width: 60%;
+        height: 80vh;
+    }
+}
+
+.contact-container {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f08bee;
+    font-family: "bree serif";
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.first-container {
+    width: 50%;
+    font-family: "bree serif";
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .first-container {
+        width: 100%;
+    }
+}
+
+.second-container {
+    width: 25%;
+    font-family: "bree serif";
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .second-container {
+        width: 100%;
+    }
+}
+
+
+.third-container {
+    width: 25%;
+    font-family: "bree serif";
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .third-container {
+        width: 100%;
+    }
+}
+
+.my-name {
+    color: white;
+    font-family: "serif bree";
+    text-align: center;
+}
+
+.my-name-container {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="main-container shadow-lg pb-5 mb-5" id="section-main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand luxury-main" href="#">Luxury</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav  ml-auto">
+                    <a class="nav-link active pl-5 pr-5 pt-2 pb-2" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link pl-5 pr-5 pt-2 pb-2" href="#services">Services</a>
+                    <a class="nav-link pl-5 pr-5 pt-2 pb-2" href="#insta">Gallery</a>
+                    <a class="nav-link pl-5 pr-5 pt-2 pb-2" href="#about">About us</a>
+                    <a class="nav-link contact text-light pl-5 pr-5 pt-2 pb-2" href="#contact">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item items-container active">
+
+                    <img src="https://images.pexels.com/photos/3594582/pexels-photo-3594582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="ring">
+                    <div class="carousel-caption  detais-container1">
+                        <h1 class="luxury-heading">LUXURY JEWELRY</h1>
+                        <P class="luxury-heading">Jewelry is something that has to do with emotion.That aspect of Jewelry really interests me.</P>
+                        <p class="luxury-heading">18 FEB, 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/618701/pexels-photo-618701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  detais-container2">
+                        <h1 class="luxury-heading">LUXURY JEWELRY</h1>
+                        <P class="luxury-heading">Jewelry is something that has to do with emotion.That aspect of Jewelry really interests me.</P>
+                        <p class="luxury-heading">18 FEB, 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/2498853/pexels-photo-2498853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  detais-container3">
+                        <h1 class="luxury-heading">LUXURY JEWELRYY</h1>
+                        <P class="luxury-heading">Jewelry is something that has to do with emotion.That aspect of Jewelry really interests me.</P>
+                        <p class="luxury-heading">18 FEB, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="Category-heading">Category</h1>
+        <ul class="nav nav-tabs tablist-container" id="myTab" role="tablist">
+            <li class="nav-item navs-button" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#rings" role="tab" aria-controls="home" aria-selected="true">Rings</a>
+            </li>
+            <li class="nav-item navs-button" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Bracelets" role="tab" aria-controls="profile" aria-selected="false">Bracelets</a>
+            </li>
+            <li class="nav-item navs-button" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#earrings" role="tab" aria-controls="contact" aria-selected="false">Earrings</a>
+            </li>
+            <li class="nav-item navs-button" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Necklace" role="tab" aria-controls="contact" aria-selected="false">Necklace</a>
+            </li>
+            <li class="nav-item navs-button" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#NosePins" role="tab" aria-controls="contact" aria-selected="false">Nose Pins</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="rings" role="tabpanel" aria-labelledby="home-tab">
+                <div class="rings-container">
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/230290/pexels-photo-230290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Engagement Rings</h1>
+                        <h1 class="ring-name">₹2500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/1670723/pexels-photo-1670723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Gold Ring</h1>
+                        <h1 class="ring-name">₹20000</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/998521/pexels-photo-998521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Silver Ring</h1>
+                        <h1 class="ring-name">₹2500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/13456847/pexels-photo-13456847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Couples Ring</h1>
+                        <h1 class="ring-name">₹5500</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Bracelets" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="rings-container">
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Party Wear Bracelet</h1>
+                        <h1 class="ring-name">₹3500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Daily Wear Bracelet</h1>
+                        <h1 class="ring-name">₹2500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/37826/nature-hand-natural-people-37826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Traditional Wear Bracelet</h1>
+                        <h1 class="ring-name">₹4500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/3634366/pexels-photo-3634366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Friends Bracelet</h1>
+                        <h1 class="ring-name">₹1500</h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="earrings" role="tabpanel" aria-labelledby="contact-tab">
+
+                <div class="rings-container">
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/1716539/pexels-photo-1716539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Fashion Wear</h1>
+                        <h1 class="ring-name">₹2500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/10983781/pexels-photo-10983781.jpeg?auto=compress&cs=tinysrgb&w=600" class="rings" />
+                        <h1 class="ring-name">Function Wear</h1>
+                        <h1 class="ring-name">₹2800</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/10976654/pexels-photo-10976654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Marriage Wear</h1>
+                        <h1 class="ring-name">₹4500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/10475792/pexels-photo-10475792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Daily Wear</h1>
+                        <h1 class="ring-name">₹3500</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Necklace" role="tabpanel" aria-labelledby="contact-tab">
+
+                <div class="rings-container">
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/1143536/pexels-photo-1143536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Traditional Wear</h1>
+                        <h1 class="ring-name">₹5500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/15064039/pexels-photo-15064039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Friend Wear</h1>
+                        <h1 class="ring-name">₹2900</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/12217206/pexels-photo-12217206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Formal Wear</h1>
+                        <h1 class="ring-name">₹2600</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://images.pexels.com/photos/10215179/pexels-photo-10215179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rings" />
+                        <h1 class="ring-name">Daily Wear</h1>
+                        <h1 class="ring-name">₹1200</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="NosePins" role="tabpanel" aria-labelledby="contact-tab">
+
+                <div class="rings-container">
+                    <div class="card-1">
+                        <img src="https://m.media-amazon.com/images/I/519BLRQaqPS._AC_UL320_.jpg" class="rings" />
+                        <h1 class="ring-name">Marriage Wear</h1>
+                        <h1 class="ring-name">₹9500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/z/ZNP00016-1.jpg" class="rings" />
+                        <h1 class="ring-name">Function wear</h1>
+                        <h1 class="ring-name">₹4500</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/l2ghgnk0/nose-ring-stud/c/s/f/cxc-nose-ring-jem-original-imagdsjb6ezfs9wg.jpeg?q=70" class="rings" />
+                        <h1 class="ring-name">Traditional wear</h1>
+                        <h1 class="ring-name">₹3800</h1>
+                    </div>
+                    <div class="card-1">
+                        <img src="https://kinclimg9.bluestone.com/f_jpg,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIVT0021X11_YAA18DIG4XXXXXXXX_ABCD00-PICS-00004-1024-13078.png" class="rings" />
+                        <h1 class="ring-name">Classical wear</h1>
+                        <h1 class="ring-name">₹3900</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Services-container shadow-lg" id="services">
+            <h1 class="our-serviesheading">Our Services</h1>
+            <div class="Services shadow-lg">
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/7541801/pexels-photo-7541801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="service-image">
+                </div>
+                <div class="details-container">
+                    <h1 class="custom-heading">Custom Jewelry</h1>
+                    <p class="custom-paragraph">Our team specializes in designing and crafting complex custom Jewelry in old or platinum.Our 3D designers can work with even the most complex ideas and create a digital model for you to approve before commitiing to production.</p>
+                    <button class="read-button">Read More</button>
+                </div>
+            </div>
+            <div class="Services  shadow-lg">
+                <div class="details-container ">
+                    <h1 class="custom-heading">Engagement Ring</h1>
+                    <p class="custom-paragraph">Our team of 3d modelers and jewelers can create literally any ring you can imagine.including complex designs.We're opening up our services to private clienets,so you can get a beautiful,desigers quality engagement ring at an afforfdable price</p>
+                    <button class="read-button">Read More</button>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/13456842/pexels-photo-13456842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="service-image" />
+                </div>
+            </div>
+            <div class="Services  shadow-lg pb-5">
+                <div class="details-container">
+                    <h1 class="custom-heading">Jewelry Manufacturing</h1>
+                    <p class="custom-paragraph">We work with you to make sure you jewellery is produced excatly as your specify and with impeccable stnadands.We can manufacture a unique collection for you store ,or even work with custom orders for you customers.</p>
+                    <button class="read-button">Read More</button>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/4354599/pexels-photo-4354599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="service-image" />
+                </div>
+            </div>
+            <div class="Services1  shadow-lg">
+
+                <img src="https://images.pexels.com/photos/1143536/pexels-photo-1143536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="design-image" />
+
+                <div class="details-container">
+                    <h1 class="custom-heading">No limits to the lifestyle you deserve.</h1>
+                    <p class="custom-paragraph">Contact us and we'll reply you back with personalized plan and quote</p>
+                    <button class="read-button1">Send Your Design Idea</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="on-insta-container1 shadow-lg" id="insta">
+            <h1 class="custom-heading1">Connect us on Instagram</h1>
+            <div class="on-insta-container">
+                <img src="https://images.pexels.com/photos/730055/pexels-photo-730055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="bride-image" />
+                <div class="insta-image-container">
+                    <img src="https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="middle-images" />
+                    <img src="https://images.pexels.com/photos/2106673/pexels-photo-2106673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="middle-images" />
+                </div>
+                <img src="https://images.pexels.com/photos/1253364/pexels-photo-1253364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="bride-image" />
+            </div>
+            <a href="https://instagram.com/luxury_jewelry112?igshid=YmMyMTA2M2Y="><button class="read-button1">Instagram</button></a>
+
+        </div>
+
+        <div class="about-container shadow-lg pt-5 mt-5 pb-5 mb-5" id="about">
+            <h1 class="our-serviesheading">About</h1>
+            <div class="about-container1 ">
+                <img src="https://images.pexels.com/photos/10983398/pexels-photo-10983398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="about-image" />
+                <div class="details-container">
+                    <p class="custom-paragraph">At Luxury, we work with high-end designers (both new and established), retail stores, and also private clients looking for that perfect custom piece or engagement ring.
+                        <br>
+                        <br>
+                        <br>
+
+                        Our studio combines over 20 years of experience with a modern focus on 3d printing technology.
+                        While we specialize in custom design and digital modeling, we're also a respected high-end jewelry manufacturer.
+                        <br>
+                        <br>
+                        <br>
+                        Our expert team of jewelers and designers will take your custom design idea all the way from concept to reality.
+                    </p>
+                    <div class="m-1">
+                        <a href="https://twitter.com/JewelryLuxury?s=20"> <i class="fa-brands fa-twitter fa-2x m-2"></i></a>
+                        <a href="https://www.facebook.com/zeeornaments/"><i class="fa-brands fa-facebook-f fa-2x m-2"></i></a>
+                        <a href="https://instagram.com/luxury_jewelry112?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x m-2"></i></a>
+
+                    </div>
+                    <button class="read-button1">Contact Us</button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-container shadow-lg" id="contact">
+            <div class="first-container">
+                <h1 class="custom-heading">Luxury</h1>
+                <p class="custom-paragraph">At Luxury, we work with high-end designers(both new and established).retail stores,and also private clienets looking for that perfect custom piece or engagement ring.</p>
+            </div>
+            <div class="second-container">
+                <h1 class="custom-heading">About us</h1>
+                <ul>
+                    <li class="custom-heading">Services</li>
+                    <li class="custom-heading">Gallery</li>
+                    <li class="custom-heading">About us</li>
+                </ul>
+            </div>
+            <div class="third-container">
+                <h1 class="custom-heading">Support</h1>
+                <ul>
+                    <li class="custom-heading"><i class="fa-regular fa-envelope"></i>hello@luxury.com</li>
+                    <li class="custom-heading">
+                        <i class="fa-solid fa-mobile"></i> +12-345-6789
+                    </li>
+                    <li>
+                        <div class="m-1">
+                            <a href="https://twitter.com/JewelryLuxury?s=20"> <i class="fa-brands fa-twitter fa-2x m-2"></i></a>
+                            <a href="https://www.facebook.com/zeeornaments/"><i class="fa-brands fa-facebook-f fa-2x m-2"></i></a>
+                            <a href="https://instagram.com/luxury_jewelry112?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x m-2"></i></a>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="my-name-container bg-dark fixed-bottom">
+            <p class="my-name pt-3">Developed by Radharam sahithi</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
